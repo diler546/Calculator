@@ -1,0 +1,538 @@
+{
+  "id": "130c1292-9010-4ac1-898f-b968a544a7f6",
+  "version": "2.0",
+  "name": "Test_github",
+  "url": "https://github.com",
+  "tests": [{
+    "id": "b1d841a2-6211-4016-bd63-0f45f30b4961",
+    "name": "Отображение главной страницы",
+    "commands": [{
+      "id": "3eafb035-bb1e-4f1b-a294-b4fe4efa6811",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e580768f-3412-41ec-807f-9cbee1542db8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d8cccf2-43f8-4132-8c9d-569353578cdf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.AppHeader-globalBar",
+      "targets": [
+        ["css=.AppHeader-globalBar", "css:finder"],
+        ["xpath=//header/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c961dc3e-0bd2-4b15-8d62-ad7149666349",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.px-4",
+      "targets": [
+        ["css=.px-4", "css:finder"],
+        ["xpath=//aside/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e7b22a5-1418-42e2-a0dd-50dfa4cdb362",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.js-notice-dismiss:nth-child(1)",
+      "targets": [
+        ["css=.js-notice-dismiss:nth-child(1)", "css:finder"],
+        ["xpath=//form[@action='/settings/dismiss-notice/dashboard_learning_pathways']", "xpath:attributes"],
+        ["xpath=//aside/div/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d1abb38-4fda-4393-b17f-a9112dd65c17",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.dashboard-changelog",
+      "targets": [
+        ["css=.dashboard-changelog", "css:finder"],
+        ["xpath=//aside/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a157460-57c7-4486-9af6-722ed064a555",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.js-notice:nth-child(1) .col-sm-6:nth-child(1) > .p-3",
+      "targets": [
+        ["css=.js-notice:nth-child(1) .col-sm-6:nth-child(1) > .p-3", "css:finder"],
+        ["xpath=//div[@id='dashboard']/div/feed-container/div[3]/article/div/div/section", "xpath:idRelative"],
+        ["xpath=//section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3b2f44f-4428-4c86-bc6a-939cae24fe7c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.js-notice:nth-child(1) .col-sm-6:nth-child(2) > .p-3",
+      "targets": [
+        ["css=.js-notice:nth-child(1) .col-sm-6:nth-child(2) > .p-3", "css:finder"],
+        ["xpath=//div[@id='dashboard']/div/feed-container/div[3]/article/div/div[2]/section", "xpath:idRelative"],
+        ["xpath=//div[2]/section", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "afc301f2-a0c1-489d-a148-305dfccf0a6c",
+    "name": "Авторизацию пользователя",
+    "commands": [{
+      "id": "28228e34-2902-471f-bd0b-2cd702f9951b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b288816a-39cf-401f-8bd3-008d37bc4d4b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "daf2f780-2df2-454f-abec-f60d172d5252",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.HeaderMenu-link--sign-in", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign in')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/login')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "012a17c1-373b-46c7-8df9-ffd4bf386bc4",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0549ba5-1f0f-490e-9ab6-202ec94c0f6e",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_field",
+      "targets": [
+        ["id=login_field", "id"],
+        ["name=login", "name"],
+        ["css=#login_field", "css:finder"],
+        ["xpath=//input[@id='login_field']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "diler7085@gmail.com"
+    }, {
+      "id": "6a2817b2-6d71-441e-959f-5e4633d69347",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88ad4985-1086-4ceb-a05c-a6e0a944efd4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "safsagasg45$"
+    }, {
+      "id": "20844e02-fe6a-44a2-afd6-81eab2d31e1c",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div[4]/form/div/input[13]", "xpath:idRelative"],
+        ["xpath=//input[13]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8522ba20-fc0d-4370-b7d5-a0bd052a8f67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Button-label > .avatar",
+      "targets": [
+        ["css=.Button-label > .avatar", "css:finder"],
+        ["xpath=//img[contains(@src,'https://avatars.githubusercontent.com/u/155128040?v=4')]", "xpath:img"],
+        ["xpath=//button[@id='dialog-show-dialog-9ea334eb-dedb-4cf0-beca-0747ba561ffe']/span/span/img", "xpath:idRelative"],
+        ["xpath=//span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bfe0580-6515-47e9-b6e9-354632c3d995",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-bold > .Truncate-text",
+      "targets": [
+        ["css=.text-bold > .Truncate-text", "css:finder"],
+        ["xpath=//modal-dialog[@id='dialog-9ea334eb-dedb-4cf0-beca-0747ba561ffe']/div/div/div/div/div[2]/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span/span", "xpath:position"]
+      ],
+      "value": "DILER009"
+    }]
+  }, {
+    "id": "9f9c3c14-5a10-4c99-a6fe-312dc8c1cb25",
+    "name": "Выход из аккаунта",
+    "commands": [{
+      "id": "2f9d7f4c-ca6c-4c2d-8f4f-1d09b04a7a3a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b32571f3-0b9c-4deb-abce-64f695835065",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4dd793f-0e04-4081-903c-b839eb034cf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Button-label > .avatar",
+      "targets": [
+        ["css=.Button-label > .avatar", "css:finder"],
+        ["xpath=//img[contains(@src,'https://avatars.githubusercontent.com/u/155128040?v=4')]", "xpath:img"],
+        ["xpath=//button[@id='dialog-show-dialog-43776472-268c-4842-8e08-1068fbb559df']/span/span/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f74dafbc-f30d-426b-b5c1-2ccdb9901c02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ActionListItem-label:nth-child(1)",
+      "targets": [
+        ["css=.ActionListItem-label:nth-child(1)", "css:finder"],
+        ["xpath=//a[@id='item-5e88bd5b-2c29-44ce-bc91-996b6b7e3b3b']/span", "xpath:idRelative"],
+        ["xpath=//li[22]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "889b387b-7f59-461d-8319-737b7686c9c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-large",
+      "targets": [
+        ["css=.btn-large", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad449563-3c8d-4283-bbb5-f70cdd511657",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.HeaderMenu-link--sign-in", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign in')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/login')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "45408b6e-4628-4ad9-903f-3600feb25336",
+    "name": " Ошибка одинаковые имена репозиториев",
+    "commands": [{
+      "id": "83263c57-0fbf-4e29-b14f-dcd4133e244e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76d0e449-c69a-44ee-932d-8260fbef3411",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "726ea458-06ce-42f0-bb71-7dd7657126fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .Details > .js-repos-container .Button-label",
+      "targets": [
+        ["css=div:nth-child(1) > .Details > .js-repos-container .Button-label", "css:finder"],
+        ["xpath=//a/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8996ad16-4fd0-4e89-b33f-d66dd708b97e",
+      "comment": "",
+      "command": "click",
+      "target": "id=:r3:",
+      "targets": [
+        ["id=:r3:", "id"],
+        ["css=#\\3Ar3\\3A", "css:finder"],
+        ["xpath=//input[@id=':r3:']", "xpath:attributes"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "421cacaa-9576-41b3-a9d7-40c7b11cf4bf",
+      "comment": "",
+      "command": "type",
+      "target": "id=:r3:",
+      "targets": [
+        ["id=:r3:", "id"],
+        ["css=#\\3Ar3\\3A", "css:finder"],
+        ["xpath=//input[@id=':r3:']", "xpath:attributes"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "TEST"
+    }, {
+      "id": "9c6b61da-b415-4783-a110-7ef951d25c2a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.lbunpI",
+      "targets": [
+        ["css=.lbunpI", "css:finder"],
+        ["xpath=//span[@id='']", "xpath:attributes"],
+        ["xpath=//span[2]/span[2]", "xpath:position"]
+      ],
+      "value": "The repository TEST already exists on this account."
+    }]
+  }, {
+    "id": "fbdc28d9-d3af-4dd2-84c3-b009cabb72b4",
+    "name": "Скачать репозиторий",
+    "commands": [{
+      "id": "dbc356c2-5f93-4804-9d48-6256733cabfa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8a4160c-12f0-4d9a-bd8c-e8fb876d529d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b7e7dc5-a0ff-425a-9963-f18435373d8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=qb-input-query",
+      "targets": [
+        ["id=qb-input-query", "id"],
+        ["css=#qb-input-query", "css:finder"],
+        ["xpath=//span[@id='qb-input-query']", "xpath:attributes"],
+        ["xpath=//button/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Type / to search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04c6d759-7cf5-4415-a641-6342a064931b",
+      "comment": "",
+      "command": "type",
+      "target": "id=query-builder-test",
+      "targets": [
+        ["id=query-builder-test", "id"],
+        ["name=query-builder-test", "name"],
+        ["css=#query-builder-test", "css:finder"],
+        ["xpath=//input[@id='query-builder-test']", "xpath:attributes"],
+        ["xpath=//query-builder[@id='query-builder-query-builder-test']/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "DILER009/TEST"
+    }, {
+      "id": "479e14d1-be25-4453-a32d-3f7683eba48f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=query-builder-test",
+      "targets": [
+        ["id=query-builder-test", "id"],
+        ["name=query-builder-test", "name"],
+        ["css=#query-builder-test", "css:finder"],
+        ["xpath=//input[@id='query-builder-test']", "xpath:attributes"],
+        ["xpath=//query-builder[@id='query-builder-query-builder-test']/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9b90044f-7a96-4181-8a34-72bf192023ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=em:nth-child(1)",
+      "targets": [
+        ["css=em:nth-child(1)", "css:finder"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'DILER009')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7a080c3-4433-4215-8214-3853665b3a46",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id=':r5:']/span/span[2]",
+      "targets": [
+        ["xpath=//button[@id=':r5:']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "854af70b-a59d-4845-a5f5-b8939aa92ddd",
+      "comment": "",
+      "command": "click",
+      "target": "id=:rg:--label",
+      "targets": [
+        ["id=:rg:--label", "id"],
+        ["css=#\\3Arg\\3A--label", "css:finder"],
+        ["xpath=//span[@id=':rg:--label']", "xpath:attributes"],
+        ["xpath=//li[@id=':rg:']/div/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Download ZIP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "88fe3ffb-06be-476e-a6be-cca1efd05504",
+    "name": "Поиск репозитория",
+    "commands": [{
+      "id": "8cc10037-2c5e-4d59-b759-22b7fbb7d36e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65e2c4c6-fd6b-4258-815d-af45655fb9b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1899x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f837bb93-74c7-411c-bd97-5d24e49452b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=qb-input-query",
+      "targets": [
+        ["id=qb-input-query", "id"],
+        ["css=#qb-input-query", "css:finder"],
+        ["xpath=//span[@id='qb-input-query']", "xpath:attributes"],
+        ["xpath=//button/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Type / to search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4eed37ac-e235-4331-bbd2-1cbacc748264",
+      "comment": "",
+      "command": "type",
+      "target": "id=query-builder-test",
+      "targets": [
+        ["id=query-builder-test", "id"],
+        ["name=query-builder-test", "name"],
+        ["css=#query-builder-test", "css:finder"],
+        ["xpath=//input[@id='query-builder-test']", "xpath:attributes"],
+        ["xpath=//query-builder[@id='query-builder-query-builder-test']/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "The-Little-Prince-game-"
+    }, {
+      "id": "fc682ffb-9712-479b-951e-2be4881e7654",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=query-builder-test",
+      "targets": [
+        ["id=query-builder-test", "id"],
+        ["name=query-builder-test", "name"],
+        ["css=#query-builder-test", "css:finder"],
+        ["xpath=//input[@id='query-builder-test']", "xpath:attributes"],
+        ["xpath=//query-builder[@id='query-builder-query-builder-test']/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "525001da-ba3c-4e1f-9c29-70c3a2838c02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Box-sc-g0xbh4-0:nth-child(3) > .Box-sc-g0xbh4-0 > .Box-sc-g0xbh4-0 > .Box-sc-g0xbh4-0 > .Box-sc-g0xbh4-0 > .Box-sc-g0xbh4-0 > .Link__StyledLink-sc-14289xe-0 em",
+      "targets": [
+        ["css=.Box-sc-g0xbh4-0:nth-child(3) > .Box-sc-g0xbh4-0 > .Box-sc-g0xbh4-0 > .Box-sc-g0xbh4-0 > .Box-sc-g0xbh4-0 > .Box-sc-g0xbh4-0 > .Link__StyledLink-sc-14289xe-0 em", "css:finder"],
+        ["xpath=//div[3]/div/div/h3/div/div[2]/a/span/em", "xpath:position"],
+        ["xpath=//em[contains(.,'The-Little-Prince-game-')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "191ed5a0-6ed7-4897-8967-42495dd66a3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wb-break-word",
+      "targets": [
+        ["css=.wb-break-word", "css:finder"],
+        ["xpath=//div[@id='repository-container-header']/div/div/div", "xpath:idRelative"],
+        ["xpath=//main/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62b1e59f-5ac1-4781-a629-4100c148284e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flex-self-stretch > .color-fg-default",
+      "targets": [
+        ["css=.flex-self-stretch > .color-fg-default", "css:finder"],
+        ["xpath=//a[contains(text(),'The-Little-Prince-game-')]", "xpath:link"],
+        ["xpath=//div[@id='repository-container-header']/div/div/div/strong/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/diler546/The-Little-Prince-game-')])[17]", "xpath:href"],
+        ["xpath=//strong/a", "xpath:position"]
+      ],
+      "value": "The-Little-Prince-game-"
+    }]
+  }],
+  "suites": [{
+    "id": "83fa1c4f-1f20-4f12-82f5-dddbd1d1d60b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b1d841a2-6211-4016-bd63-0f45f30b4961"]
+  }],
+  "urls": ["https://github.com/"],
+  "plugins": []
+}
