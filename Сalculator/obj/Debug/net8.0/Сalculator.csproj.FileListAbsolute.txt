@@ -1,0 +1,14 @@
+D:\Project\C#\Сalculator\Сalculator\obj\Debug\net8.0\Сalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\C#\Сalculator\Сalculator\obj\Debug\net8.0\Сalculator.AssemblyInfoInputs.cache
+D:\Project\C#\Сalculator\Сalculator\obj\Debug\net8.0\Сalculator.AssemblyInfo.cs
+D:\Project\C#\Сalculator\Сalculator\obj\Debug\net8.0\Сalculator.csproj.CoreCompileInputs.cache
+D:\Project\C#\Сalculator\Сalculator\bin\Debug\net8.0\Сalculator.exe
+D:\Project\C#\Сalculator\Сalculator\bin\Debug\net8.0\Сalculator.deps.json
+D:\Project\C#\Сalculator\Сalculator\bin\Debug\net8.0\Сalculator.runtimeconfig.json
+D:\Project\C#\Сalculator\Сalculator\bin\Debug\net8.0\Сalculator.dll
+D:\Project\C#\Сalculator\Сalculator\bin\Debug\net8.0\Сalculator.pdb
+D:\Project\C#\Сalculator\Сalculator\obj\Debug\net8.0\Сalculator.dll
+D:\Project\C#\Сalculator\Сalculator\obj\Debug\net8.0\refint\Сalculator.dll
+D:\Project\C#\Сalculator\Сalculator\obj\Debug\net8.0\Сalculator.pdb
+D:\Project\C#\Сalculator\Сalculator\obj\Debug\net8.0\Сalculator.genruntimeconfig.cache
+D:\Project\C#\Сalculator\Сalculator\obj\Debug\net8.0\ref\Сalculator.dll
